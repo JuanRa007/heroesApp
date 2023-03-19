@@ -69,6 +69,10 @@ https://angular.io/api/common/DatePipe
 https://material.angular.io/
   Material Angular
 
+https://www.npmjs.com/package/json-server
+  Json Server
+  Para levantar el servidor: json-server --watch db.json
+
 
 
 ## Comandos.
