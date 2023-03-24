@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { HeroesRoutingModule } from './heroes-routing.module';
 import { MaterialModule } from '../material/material.module';
@@ -26,6 +27,7 @@ import { ImagenPipe } from './pipes/imagen.pipe';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     MaterialModule,
     HeroesRoutingModule
   ]

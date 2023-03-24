@@ -6,5 +6,25 @@
 
 
 <ng-template #divHeroe>
-  {{ heroe | json }}
+  <div class="flex flex-wrap justify-content-center card-container gap-3">
+    <div>
+      <h1>{{ heroe.superhero}}<small> - {{ heroe.alter_ego }}</small></h1>
+      <mat-divider></mat-divider>
+      <br>
+      <img [src]="heroe | imagen" alt="{{ heroe.superhero}}">
+    </div>
+    <div>
+      <h1>{{ heroe.publisher}}</h1>
+      <mat-divider></mat-divider>
+
+      <mat-list>
+        <mat-list-item> {{ heroe.first_appearance }} </mat-list-item>
+        <mat-list-item> {{ heroe.characters }} </mat-list-item>
+        <mat-list-item> {{ heroe.publisher }} </mat-list-item>
+        <mat-list-item> {{ heroe.alter_ego }} </mat-list-item>
+      </mat-list>
+      <br>
+      <button mat-button color="warn" (click)="regresar()">Regresar</button>
+    </div>
+  </div>
 </ng-template>
